@@ -1,4 +1,4 @@
-Open ERP System :- Odoo 11 Master 
+Open ERP System :- Odoo 11 Community 
 
 Installation 
 ============
