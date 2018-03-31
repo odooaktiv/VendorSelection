@@ -17,17 +17,15 @@ class SaleOrderLine(models.Model):
         if self.route_id:
             self.is_route = True
             
-class ProcurementRule(models.Model):
-    _inherit = 'procurement.rule'
+class ProcurementOrder(models.Model):
+    _inherit = 'procurement.order'
 
-    def _make_po_select_supplier(self, values, suppliers):
+    def _make_po_select_supplier(self, suppliers):
         """ Method intended to be overridden by customized modules to implement any logic in the
             selection of supplier.
         """
-        print "\n\n values-------", values
-        print "\n\n rioute ids----",  values.get('route_ids')
-        if values.get('route_ids'):
-            so = self.env['sale.order.line'].browse(values.get('sale_line_id'))
+        if self:
+            so = self.env['sale.order.line'].browse(self.sale_line_id.id)
             supplier = so.vendor_id or suppliers[0]
             
             return supplier
