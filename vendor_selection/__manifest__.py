@@ -6,13 +6,14 @@
         Customer will select vendor as per his choice.""",
 
     'description': """
-       Customer will select vendor as per his choice in sale order when customer choose drop shipping scenario.
+       Customer will select vendor as per his choice in sale order
+       when customer choose drop shipping scenario.
     """,
 
     'author': "Aktiv software ",
     'website': "http://www.aktivsoftware.com/",
 
-    
+
     'category': 'Sales',
     'version': '0.1',
 
@@ -23,8 +24,8 @@
     'data': [
         'views/sale_order.xml',
     ],
-    
 
-   'images':  ['static/description/banner.jpg'],
+
+    'images': ['static/description/banner.jpg'],
     'application': True,
 }
