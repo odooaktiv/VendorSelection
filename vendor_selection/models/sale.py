@@ -8,6 +8,9 @@ class SaleOrderLine(models.Model):
 
     vendor_id = fields.Many2one('product.supplierinfo', 'Vendor')
     is_route = fields.Boolean('Is Route', defualt=False)
+    product_tmpl_id = fields.Many2one(related='product_id.product_tmpl_id',
+                                      string='Product Template',
+                                      store=True)
 
     @api.multi
     @api.onchange('route_id')
