@@ -1,32 +1,20 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Vendor Selection For Dropshipping",
-
-    'summary': """
-        Customer will select vendor as per his choice.""",
-
-    'description': """
-       Customer will select vendor as per his choice in sale order
-       when customer choose drop shipping scenario.
-    """,
-
-    'author': "Aktiv software ",
-    'website': "http://www.aktivsoftware.com/",
-    'license': "AGPL-3",
-
-
+    'name': 'Vendor Selection',
+    'summary': 'Customer will select vendor as per his choice.',
+    'website': 'http://www.aktivsoftware.com',
+    'description': 'Customer will select vendor as per his choice in sale order \
+        when customer choose drop shipping scenario.',
+    'license': 'AGPL-3',
+    'author': 'Aktiv Software',
     'category': 'Sales',
-    'version': '0.1',
-
-    # any module necessary for this one to work correctly
+    'version': '11.0.1.0.0',
     'depends': ['sale_management', 'purchase'],
-
-    # always loaded
     'data': [
         'views/sale_order.xml',
     ],
-
-
     'images': ['static/description/banner.jpg'],
-    'application': True,
+    'auto_install': False,
+    'installable': True,
+    'application': False
 }
