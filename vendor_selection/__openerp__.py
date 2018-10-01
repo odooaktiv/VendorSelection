@@ -8,8 +8,8 @@
     'license': 'AGPL-3',
     'author': 'Aktiv Software',
     'category': 'Sales',
-    'version': '11.0.1.0.0',
-    'depends': ['sale_management', 'purchase'],
+    'version': '9.0.1.0.0',
+    'depends': ['sale', 'purchase'],
     'data': [
         'views/sale_order.xml',
     ],
