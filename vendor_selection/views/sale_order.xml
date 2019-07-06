@@ -8,13 +8,15 @@
 			<field name="priority">100</field>
 			<field name="arch" type="xml">
               <xpath expr="//field[@name='order_line']/tree/field[@name='price_unit']" position="before">
+              		<field name="product_tmpl_id" invisible="1"/>
               		<field name="is_route" invisible="1"/>
-               		<field name="vendor_id" attrs="{'invisible': [('is_route', '!=', True)]}" domain="[('product_tmpl_id','=', product_id)]"/>
+               		<field name="vendor_id" attrs="{'invisible': [('is_route', '!=', True)]}" domain="[('product_tmpl_id','=', product_tmpl_id)]"/>
                </xpath>
                
                <xpath expr="//field[@name='order_line']/form/group/group/field[@name='price_unit']" position="before">
+               		<field name="product_tmpl_id" invisible="1"/>
               		<field name="is_route" invisible="1"/>
-               		<field name="vendor_id" attrs="{'invisible': [('is_route', '!=', True)]}" domain="[('product_tmpl_id','=', product_id)]"/>
+               		<field name="vendor_id" attrs="{'invisible': [('is_route', '!=', True)]}" domain="[('product_tmpl_id','=', product_tmpl_id)]"/>
                </xpath>
 			</field>
 		</record>

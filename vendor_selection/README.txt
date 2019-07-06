@@ -1,5 +1,4 @@
-Open ERP System :- Odoo 11 Master 
-
+Open ERP System :- Odoo 12 Community master
 Installation 
 ============
 Install the Application => Apps -> Vendor Selection(Technical Name:vendor_selection)
