@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'Vendor Selection',
+    'name': 'Vendor Selection For Dropshipping',
     'summary': 'Customer will select vendor as per his choice.',
     'website': 'http://www.aktivsoftware.com',
     'description': 'Customer will select vendor as per his choice in sale order \
