@@ -12,7 +12,6 @@ class SaleOrderLine(models.Model):
                                       string='Product Template',
                                       store=True)
 
-    @api.multi
     @api.onchange('route_id')
     def _onchange_route_id(self):
         if self.route_id:
