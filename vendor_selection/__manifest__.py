@@ -7,7 +7,7 @@
         when customer choose drop shipping scenario.',
     'license': 'AGPL-3',
     'author': 'Aktiv Software',
-    'category': 'Sales',
+    'category': 'Purchases',
     'version': '10.0.1.0.0',
     'depends': ['sale', 'purchase'],
     'data': [
