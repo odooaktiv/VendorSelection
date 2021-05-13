@@ -28,6 +28,7 @@ class StockRule(models.Model):
 
     @api.model
     def _run_buy(self, procurements):
+        # Test Commit
         procurements_by_po_domain = defaultdict(list)
         errors = []
         for procurement, rule in procurements:
